@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Poky Poker</string>
+
+    <string name="saved_credit">saved_credit</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="btn_Play_Text">Play</string>
+    <string name="btn_Card_Deck_Text">Choose Card Deck</string>
+    <string name="txt_btn_Statistics">Statistics</string>
+
+    <string name="title_activity_play">PlayActivity</string>
+    <string name="txt_Bet">Your bet is 0</string>
+    <string name="txt_Button_Raise_Up">Up</string>
+    <string name="txt_Button_Raise_Down">Down</string>
+    <string name="txt_Button_Exit">X</string>
+    <string name="txt_Button_PlayOrGetMoney">Play</string>
+    <string name="txt_txtView_fill_1"></string>
+    <string name="txt_btn_card1_Hold">Hold</string>
+    <string name="txt_btn_card2_Hold">Hold</string>
+    <string name="txt_btn_card3_Hold">Hold</string>
+    <string name="txt_btn_card4_Hold">Hold</string>
+    <string name="txt_btn_card5_Hold">Hold</string>
+    <string name="txt_txtView_fill_2"></string>
+    <string name="txt_txtView_Info">Please place your bet !</string>
+    <string name="txt_txtView_Credit">1000</string>
+    <string name="title_activity_double">DoubleActivity</string>
+    <string name="txt_btn_Double">Double</string>
+    <string name="txt_Double_Fill_1"></string>
+    <string name="txt_Double_Fill_2"></string>
+    <string name="txt_btn_Red">Red</string>
+    <string name="txt_btn_Black">Black</string>
+    <string name="txt_Center_Relative_Layout"></string>
+    <string name="txt_btn_Double_Trefla">Clubs</string>
+    <string name="txt_btn_Double_Romb">Diamonds</string>
+    <string name="txt_btn_Double_InimaRosie">Hearts</string>
+    <string name="txt_btn_Double_InimaNeagra">Spades</string>
+    <string name="txt_actual_Winning">Actual Winning : </string>
+    <string name="txt_btn_Double_Get_Money">Get Money</string>
+    <integer name="saved_credit_default">1000</integer>
+    <string name="title_activity_choose_card_deck">ChooseCardDeck</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="txt_btn_Buy_Deck_Card">Buy it !</string>
+    <string name="txt_Credit_ChooseDeckCard">Large Text</string>
+    <string name="title_activity_start_logo">StartLogo</string>
+    <string name="txt_Rights_Reserved">Symplyfyweb.ro &#169; All Rights Reserved</string>
+
+</resources>

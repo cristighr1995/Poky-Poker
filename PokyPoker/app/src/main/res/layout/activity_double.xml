@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.symplyfyweb.gherghina.pokypoker.DoubleActivity"
+    android:background="#d4d4d4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="10.0"
+        android:id="@+id/linLay_Full_Double">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="3.0"
+            android:contentDescription="@string/app_name"
+            android:id="@+id/iv_card_to_Guess"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7.0"
+            android:id="@+id/relLay_Double_Buttons">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/txt_Center">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/txt_Double_Fill_1"
+                    android:id="@+id/txtView_Double_Fill_1"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_states_red"
+                    android:text="@string/txt_btn_Red"
+                    android:layout_margin="5dp"
+                    android:id="@+id/btn_Red"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_states_black"
+                    android:text="@string/txt_btn_Black"
+                    android:layout_margin="5dp"
+                    android:id="@+id/btn_Black"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/txt_Double_Fill_2"
+                    android:id="@+id/txtView_Double_Fill_2"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/txt_Center_Relative_Layout"
+                android:id="@+id/txt_Center"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/txt_Center" >
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_Trefla"
+                    android:layout_weight="1"
+                    android:background="@drawable/club_symbol" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/btn_Romb"
+                    android:layout_weight="1.01"
+                    android:background="@drawable/diamond_symbol" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/btn_InimaRosie"
+                    android:layout_weight="1"
+                    android:background="@drawable/heart_symbol" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/btn_InimaNeagra"
+                    android:layout_weight="1"
+                    android:background="@drawable/spade_symbol" />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_states_green_borderless"
+                android:text="@string/txt_btn_Double_Get_Money"
+                android:id="@+id/btn_getMoney_Double"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textColor="#ffffff" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/imageView" android:layout_marginRight="5dp"
+                    android:background="@drawable/money_credit"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/txt_actual_Winning"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/txt_actual_Winning"
+                    android:textColor="#010001" />
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

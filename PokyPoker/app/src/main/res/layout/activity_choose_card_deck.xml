@@ -1,0 +1,98 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.symplyfyweb.gherghina.pokypoker.ChooseCardDeck"
+    android:id="@+id/frmLay_Container"
+    android:background="#d4d4d4">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/img_btn_Back"
+            android:layout_gravity="left"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/app_name"
+            android:background="@drawable/img_btn_back" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="right">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:contentDescription="@string/app_name"
+                    android:background="@drawable/money_credit" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/txt_Credit_ChooseDeckCard"
+                    android:id="@+id/txtView_Credit_ChooseDeckCard"
+                    android:textColor="#010101" />
+
+            </LinearLayout>
+
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/gridView_Card_Deck"
+                android:columnWidth="130dp"
+                android:horizontalSpacing="5dp"
+                android:numColumns="auto_fit"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="5dp">
+            </GridView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10.0"
+            android:id="@+id/linLay_Zoom_Image" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8.5"
+                android:layout_marginTop="10dp"
+                android:id="@+id/expanded_mage"
+                android:contentDescription="@string/app_name"
+                android:visibility="invisible" />
+
+            <Button
+                android:layout_width="220dp"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/button_states_green"
+                android:id="@+id/btn_Buy_Deck_Card"
+                android:contentDescription="@string/app_name"
+                android:text="@string/txt_btn_Buy_Deck_Card"
+                android:visibility="invisible"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
